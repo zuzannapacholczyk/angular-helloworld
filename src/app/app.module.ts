@@ -6,11 +6,12 @@ import { AppComponent } from "./app.component";
 import { FirstComponent } from "./components/first.component";
 import { SecondComponent } from "./components/second.component";
 import { RoutingModule } from "./routing.module";
+import { DummyService } from "./services/dummy.service";
 
 @NgModule({
   declarations: [AppComponent, FirstComponent, SecondComponent],
   imports: [BrowserModule, RoutingModule, FormsModule, ReactiveFormsModule],
-  providers: [],
+  providers: [DummyService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
